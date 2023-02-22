@@ -1,10 +1,12 @@
 *, *::after, *::before {
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
-body, html {
+:root, body {
     margin: 0;
     height: 100%;
+    font-size: 16px;
 }
 
 .container {
@@ -22,12 +24,26 @@ body, html {
     padding: 20px;
 
     display: grid;
-    grid-template-rows: 0.5fr 3fr 2fr;
+    grid-template-rows: 0.5fr 2fr 2fr;
     gap: 30px;
 }
 
 .logo {
-    background-color: red;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 40px 1fr;
+    grid-template-rows: 40px;
+}
+
+.logo-icon {
+
+}
+
+.logo-text {
+    align-self: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
 }
 
 .menu,
@@ -46,12 +62,16 @@ body, html {
     grid-template-rows: 25px;
 }
 
-.dashboard-icon {
+.dashboard-icon,
+.logo-icon {
     background-color: red;
 }
 
 .dashboard-text {
     align-self: center;
+    font-size: 1rem;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
 }
 
 .header {
