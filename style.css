@@ -12,8 +12,7 @@
 .container {
     height: 100%;
     display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template: 1fr 4fr / 1fr 4fr;
 }
 
 .sidebar {
@@ -30,20 +29,19 @@
 
 .logo {
     display: grid;
-    gap: 20px;
-    grid-template-columns: 40px 1fr;
-    grid-template-rows: 40px;
+    gap: 10px;
+    grid-template: 40px / 40px 1fr;
 }
 
-.logo-icon {
-
+.logo > svg {
+    color: #FFFFFF;
 }
 
 .logo-text {
     align-self: center;
     font-size: 1.5rem;
     font-weight: 700;
-    color: rgb(255, 255, 255);
+    color: #FFFFFF;
 }
 
 .menu,
@@ -51,31 +49,31 @@
     display: grid;
     grid-auto-flow: row;
     align-content: flex-start;
-    gap: 15px;
+    gap: 20px;
 }
 
 .menu-item,
 .additional-item {
     display: grid;
-    gap: 10px;
-    grid-template-columns: 25px 1fr;
-    grid-template-rows: 25px;
+    gap: 20px;
+    grid-template: 20px / 20px 1fr;
+    cursor: pointer;
 }
 
-.dashboard-icon,
-.logo-icon {
-    background-color: red;
+.menu-item > svg,
+.additional-item > svg {
+    color: #FFFFFF;
 }
 
 .dashboard-text {
     align-self: center;
     font-size: 1rem;
     font-weight: 700;
-    color: rgb(255, 255, 255);
+    color: #FFFFFF;
 }
 
 .header {
-    background-color: rgb(255, 255, 255);
+    background-color: #FFFFFF;
 }
 
 .main-content {
