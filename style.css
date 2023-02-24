@@ -82,7 +82,7 @@
     display: grid;
     height: 100%;
     column-gap: 30px;
-    row-gap: 5px;
+    row-gap: 20px;
     grid-template-rows: 1fr 2fr;
     grid-template-columns: 2fr 1fr;
 }
@@ -195,6 +195,8 @@
     display: grid;
     column-gap: 20px;
     grid-template-columns: 3fr 1fr;
+
+    box-shadow: inset 0px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 .projects-area {
@@ -203,7 +205,10 @@
 }
 
 .your-projects {
-    padding-bottom: 10px;
+    padding-bottom: 15px;
+
+    font-weight: 500;
+    font-size: 1.1rem;
 }
 
 .cards {
@@ -213,7 +218,37 @@
 }
 
 .card {
+    position: relative;
     padding: 25px;
+
     background-color: #FFFFFF;
+
     height: 200px;
+    border-radius: 9px;
+    box-shadow: inset 8px 0px 0px rgb(249, 154, 81);
+}
+
+.card-title {
+    font-weight: 700;
+    font-size: 1.2rem;
+
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+.card-icons {
+    position: absolute;
+    height: 25px;
+    width: 115px;
+
+    right: 25px; 
+    bottom: 25px;
+
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
 }
