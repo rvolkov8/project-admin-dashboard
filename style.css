@@ -204,14 +204,14 @@
     grid-template-rows: auto 1fr;
 }
 
-.your-projects {
+.your-projects-text {
     padding-bottom: 15px;
 
     font-weight: 500;
     font-size: 1.1rem;
 }
 
-.cards {
+.projects-area > .cards {
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -252,3 +252,42 @@
     column-gap: 20px;
     grid-template-columns: 1fr 1fr 1fr;
 }
+
+.side-area {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.announcements {
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.announcements-text {
+    padding-bottom: 15px;
+
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.announcements-area {
+    background-color: #FFFFFF;
+    padding: 25px;
+    border-radius: 9px;
+
+    display: grid;
+    align-content: space-between;
+    grid-template-rows: repeat(3, max-content);
+}
+
+.announcement-title {
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.announcement-text {
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
