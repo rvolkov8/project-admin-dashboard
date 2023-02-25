@@ -225,7 +225,7 @@
 
     height: 200px;
     border-radius: 9px;
-    box-shadow: inset 8px 0px 0px rgb(249, 154, 81);
+    box-shadow: inset 8px 0px 0px rgb(249, 154, 81), 3px 3px 3px rgba(0, 0, 0, 0.1);
 }
 
 .card-title {
@@ -255,15 +255,18 @@
 
 .side-area {
     display: grid;
+    gap: 30px;
     grid-template-rows: 1fr 1fr;
 }
 
-.announcements {
+.announcements,
+.trending {
     display: grid;
     grid-template-rows: auto 1fr;
 }
 
-.announcements-text {
+.announcements-text,
+.trending-text {
     padding-bottom: 15px;
 
     font-weight: 500;
@@ -278,16 +281,63 @@
     display: grid;
     align-content: space-between;
     grid-template-rows: repeat(3, max-content);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
 }
 
-.announcement-title {
+.announcement-title,
+.tag {
     font-size: 0.9rem;
     font-weight: 700;
     margin-bottom: 5px;
 }
 
-.announcement-text {
+.announcement-text,
+.project-name {
     font-size: 0.8rem;
     font-weight: 300;
 }
 
+.trending-area {
+    background-color: #FFFFFF;
+    padding: 25px;
+    border-radius: 9px;
+
+    display: grid;
+    align-content: space-between;
+    align-items: center;
+    column-gap: 10px;
+    grid-template: repeat(4, max-content) / max-content 1fr;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.trending-profile-picture1,
+.trending-profile-picture2,
+.trending-profile-picture3,
+.trending-profile-picture4 {
+    width: 50px;
+    height: 50px;
+}
+
+.trending-profile-picture1 {
+    background: url(./assets/avatar1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.trending-profile-picture2 {
+    background: url(./assets/avatar2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.trending-profile-picture3 {
+    background: url(./assets/avatar3.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.trending-profile-picture4 {
+    background: url(./assets/avatar2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
