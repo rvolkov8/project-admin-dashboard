@@ -35,6 +35,8 @@
 
 .logo > svg {
     color: #FFFFFF;
+    height: 100%;
+    width: 100%;
 }
 
 .logo-text {
@@ -63,6 +65,8 @@
 .menu-item > svg,
 .additional-item > svg {
     color: #FFFFFF;
+    height: 100%;
+    width: 100%;
 }
 
 .dashboard-text {
@@ -108,10 +112,6 @@
     border-radius: 50px;
 }
 
-.header-icon {
-    background-color: red;
-}
-
 .header-profile {
     grid-area: 1 / 2 / 2 / 3;
     justify-self: end;
@@ -120,6 +120,11 @@
     display: grid;
     gap: 15px;
     grid-template: 20px / 20px 20px 1fr;
+}
+
+.header-profile > svg {
+    height: 100%;
+    width: 100%;
 }
 
 .profile-picture {
@@ -251,6 +256,11 @@
     display: grid;
     column-gap: 20px;
     grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card-icons > svg {
+    height: 100%;
+    width: 100%;
 }
 
 .side-area {
